@@ -21,12 +21,14 @@ const instructions = Platform.select({
 
 type Props = {};
 
-if (__DEV__) {
-  // const DevMenu = require('react-native-dev-menu');
-  // DevMenu.addItem('Say Hello', () => alert('Hello!'));
-}
+export default class Home extends Component<Props> {
+  componentDidMount () {
+    if (__DEV__) {
+      const DevMenu = require('react-native-dev-menu');
+      DevMenu.addItem('Component', () => this.props.navigation.navigate('STORYBOOK'));
+    }
 
-export default class App extends Component<Props> {
+  }
   render() {
     return (
       <View style={styles.container}>
