@@ -20,6 +20,12 @@ const instructions = Platform.select({
 });
 
 type Props = {};
+
+if (__DEV__) {
+  // const DevMenu = require('react-native-dev-menu');
+  // DevMenu.addItem('Say Hello', () => alert('Hello!'));
+}
+
 export default class App extends Component<Props> {
   render() {
     return (
