@@ -1,7 +1,7 @@
 import { createStackNavigator } from 'react-navigation';
 
 import Home from './Home';
-import Storybook from './Storybook';
+import StorybookUI from '../storybook/storybook';
 
 
 const navigationOptions = {
@@ -14,8 +14,7 @@ const routes = {
     navigationOptions,
   },
   STORYBOOK: {
-    screen: Storybook,
-    navigationOptions,
+    screen: StorybookUI,
   },
 }
 export default createStackNavigator(routes)
