@@ -25,7 +25,7 @@ export default class Home extends Component<Props> {
   componentDidMount () {
     if (__DEV__) {
       const DevMenu = require('react-native-dev-menu');
-      DevMenu.addItem('Component', () => this.props.navigation.navigate('STORYBOOK'));
+      DevMenu.addItem('Storybook', () => this.props.navigation.navigate('STORYBOOK'));
     }
 
   }

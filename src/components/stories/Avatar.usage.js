@@ -1,7 +1,6 @@
 //@flow
-
 import React from 'react';
-import Container from '../Container';
+import { View } from 'react-native';
 import Avatar from '../Avatar';
 
 const users = {
@@ -15,12 +14,12 @@ const users = {
 };
 
 const Avatars = () => (
-  <Container flex={1} justify="space-around">
+  <View flex={1} alignItems='center' justifyContent="space-around">
     <Avatar avatarUrl={users.richard.avatarFileName} small />
     <Avatar avatarUrl={null} title="RH" medium />
     <Avatar avatarUrl={users.richard.avatarFileName} large />
     <Avatar avatarUrl={users.richard.avatarFileName} xlarge />
-  </Container>
+  </View>
 );
 
 export default Avatars;
